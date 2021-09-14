@@ -1,0 +1,99 @@
+id {
+  value: "example"
+}
+active {
+  value: true
+}
+name {
+  use {
+    value: OFFICIAL
+  }
+  family {
+    value: "Chalmers"
+  }
+  given {
+    value: "Peter"
+  }
+  given {
+    value: "James"
+  }
+}
+name {
+  use {
+    value: USUAL
+  }
+  given {
+    value: "Jim"
+  }
+}
+telecom {
+  system {
+    value: PHONE
+  }
+  value {
+    value: "(03) 3410 5613"
+  }
+  use {
+    value: MOBILE
+  }
+  rank {
+    value: 2
+  }
+}
+gender {
+  value: MALE
+}
+birth_date {
+  value_us: 157161600000000
+  timezone: "Europe/London"
+  precision: DAY
+  extension {
+    url {
+      value: "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
+    }
+    value {
+      date_time {
+        value_us: 157232145000000
+        timezone: "-05:00"
+        precision: SECOND
+      }
+    }
+  }
+}
+deceased {
+  boolean {
+  }
+}
+address {
+  use {
+    value: HOME
+  }
+  type {
+    value: BOTH
+  }
+  text {
+    value: "534 Erewhon St PeasantVille, Rainbow, Vic  3999"
+  }
+  line {
+    value: "534 Erewhon St"
+  }
+  city {
+    value: "PleasantVille"
+  }
+  district {
+    value: "Rainbow"
+  }
+  state {
+    value: "Vic"
+  }
+  postal_code {
+    value: "3999"
+  }
+  period {
+    start {
+      value_us: 157161600000000
+      timezone: "Europe/London"
+      precision: DAY
+    }
+  }
+}
